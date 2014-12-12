@@ -8,5 +8,12 @@ public class MainClass
 {
    public static void main(String[] args)
    {
+      MainClass mainClass = new MainClass();
+      mainClass.go();
+   }
+
+   public void go()
+   {
+      // TODO implement go method
    }
 }
