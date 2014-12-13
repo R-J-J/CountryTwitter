@@ -6,11 +6,14 @@ package com.utwente.salp2.rafal.json;
  */
 public class JsonDataUser extends JsonData
 {
+   final public static String ID = "$.id";
+
    public JsonDataUser()
    {
       super();
       try
       {
+         addKey(ID);
          addKey("$.time_zone");
          addKey("$.location");
          addKey("$.lang");

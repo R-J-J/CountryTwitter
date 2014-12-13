@@ -120,4 +120,21 @@ public class JsonData
       }
       return new ArrayList<>(currentValues);
    }
+
+
+   @Override
+   public String toString()
+   {
+      for (String key : pathsMap.keySet())
+      {
+         System.out.println(key);
+         for (String value : pathsMap.get(key))
+         {
+            System.out.print(value + "; ");
+         }
+         System.out.println();
+      }
+      System.out.println();
+      return super.toString();
+   }
 }

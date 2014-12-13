@@ -69,7 +69,7 @@ public class JsonDataExtractor
    Set<String> pathsToLokFor;
 
 
-   public void extractData(InputStream dataStream, JsonData jsonData)
+   public JsonData extractData(InputStream dataStream, JsonData jsonData)
            throws Exception
    {
       namesStack = new NamesStack();
@@ -89,10 +89,11 @@ public class JsonDataExtractor
                   break;
                case KEY_NAME:
                   namesStack.modifyStack(parser.getString());
+                  break;
+               case VALUE_STRING: // TODO should work for all JsonValues
+               case VALUE_NUMBER:
                   if (checkIfEqualsToPath())
-                  {
                      addData(parser, jsonData);
-                  }
                   break;
             }
          }
@@ -103,6 +104,8 @@ public class JsonDataExtractor
          System.err.println(e.getMessage());
          throw new Exception("Invalid JSON file.");
       }
+
+      return jsonData;
    }
 
 
@@ -118,21 +121,7 @@ public class JsonDataExtractor
            throws Exception
    {
       String currentPath = namesStack.getCurrentPath();
-      if (!correctValue(parser.next()))
-      {
-         String separator = System.getProperty("line.separator");
-         throw new Exception("Value is not a String or Number:" + separator
-                 + currentPath);
-      }
       jsonData.addValue(currentPath, parser.getString());
-   }
-
-
-   private boolean correctValue(JsonParser.Event event)
-   {
-      // TODO should work for all JsonValues
-      return event == JsonParser.Event.VALUE_STRING
-              || event == JsonParser.Event.VALUE_NUMBER;
    }
 }
 
