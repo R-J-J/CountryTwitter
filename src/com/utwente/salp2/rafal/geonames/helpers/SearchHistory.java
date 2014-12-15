@@ -49,4 +49,9 @@ public class SearchHistory<K, V>
       historyElements.addFirst(key);
       historyMap.put(key, value);
    }
+
+   public boolean isInHistory(K key)
+   {
+      return historyElements.contains(key);
+   }
 }

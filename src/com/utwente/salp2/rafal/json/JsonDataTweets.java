@@ -4,9 +4,9 @@ package com.utwente.salp2.rafal.json;
  * Created by rafal on 11.12.14.
  * JsonData with initialized values for Twits.
  */
-public class JsonDataTwitter extends JsonData
+public class JsonDataTweets extends JsonData
 {
-   public JsonDataTwitter()
+   public JsonDataTweets()
    {
       super();
       try

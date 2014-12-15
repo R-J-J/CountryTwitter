@@ -35,7 +35,8 @@ public class FileSpeedTest
 
    private void testRawFile()
    {
-      String filePL = "/home/rafal/0_Workspaces/IdeaProjects/CountryTwitter/res/PL.txt";
+      String filePL = "/home/rafal/0_Workspaces/IdeaProjects/"
+              +"CountryTwitter/src/tests/resources/PL.txt";
       File usersFile = new File(filePL);
 
       try (BufferedReader br = new BufferedReader(new
