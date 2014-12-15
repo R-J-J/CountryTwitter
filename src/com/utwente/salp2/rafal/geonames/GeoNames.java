@@ -26,36 +26,20 @@ public class GeoNames
    public Map<String, Integer> searchGeoName (String geoName)
            throws Exception
    {
-      return searchGeoName(geoName, false, null);
-   }
-
-   public Map<String, Integer> searchGeoName (String geoName,
-                                              boolean exactMatch,
-                                              FeatureClass featureClass)
-           throws Exception
-   {
-      //TODO history contains but features changed?
-      // probably replace web search for time zone with file search
       Map<String, Integer> result = geoNameHistory.search(geoName);
       if (result == null)
-         result = searchGeoNameWeb(geoName, exactMatch, featureClass);
+         result = searchGeoNameWeb(geoName);
       return new HashMap<>(result);
    }
 
-   private Map<String, Integer> searchGeoNameWeb(String geoName,
-                                                 boolean exactMatch,
-                                                 FeatureClass featureClass)
+
+   private Map<String, Integer> searchGeoNameWeb(String geoName)
            throws Exception
    {
       WebService.setUserName(USER_NAME);
 
       ToponymSearchCriteria searchCriteria = new ToponymSearchCriteria();
-      if (exactMatch)
-         searchCriteria.setNameEquals(geoName);
-      else
-         searchCriteria.setQ(geoName);
-      if (featureClass != null)
-         searchCriteria.setFeatureClass(featureClass);
+      searchCriteria.setQ(geoName);
       ToponymSearchResult searchResult = WebService.search(searchCriteria);
 
       Map<String, Integer> sumResults = new HashMap<>();

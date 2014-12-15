@@ -4,8 +4,8 @@ import com.utwente.salp2.rafal.geonames.helpers.SearchHistory;
 import org.geonames.FeatureClass;
 
 import java.io.*;
-import java.util.HashMap;
-import java.util.Map;
+import java.lang.reflect.Array;
+import java.util.*;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
@@ -24,62 +24,107 @@ public class TimeZone
 {
    private final static int TIMEZONE_HISTORY_SIZE = 10;
    private SearchHistory<String, Map<String, Integer>> timeZoneFileHistory;
-   private GeoNames geoNames;
    private File exceptionFile;
+   private File capitalFile;
 
-   public TimeZone(String exceptionFilePath)
+   public TimeZone(String capitalsFilePath, String exceptionFilePath)
            throws Exception
    {
       timeZoneFileHistory = new SearchHistory<>(TIMEZONE_HISTORY_SIZE);
-      geoNames = new GeoNames();
+
       exceptionFile = new File(exceptionFilePath);
       if (!exceptionFile.isFile() || !exceptionFile.canRead())
-      {
-         throw new Exception("Cannot read from given File.");
-      }
+         throw new Exception("Cannot read from given File with exception list.");
+
+      capitalFile = new File(capitalsFilePath);
+      if (!capitalFile.isFile() || !capitalFile.canRead())
+         throw new Exception("Cannot read from given File with exception list.");
    }
 
    public Map<String, Integer> searchTimeZone(String timeZone)
            throws Exception
    {
-      Map<String, Integer> result = timeZoneFileHistory.search(timeZone);
-      if (result == null)
-      {
-         result = searchExceptionFile(timeZone);
-      }
-      if (result.isEmpty())
-      {
-         //search in the web service
-         //TODO searching only capital cities?
-         result = geoNames.searchGeoName(timeZone, true, FeatureClass.P);
-      }
-      if (result.isEmpty())
-      {
-         System.out.println("Time zone \"" + timeZone + "\" was not found."+
-         " Please consider adding it to exception file");
-      }
-      return new HashMap<>(result);
+      Set<String> tempLanguage = new HashSet<>();
+      tempLanguage.add(timeZone);
+      Map<String, Map<String, Integer>> results;
+      results = searchTimeZones(tempLanguage);
+      return results.get(timeZone);
    }
 
-   private Map<String, Integer> searchExceptionFile(String timeZone)
+   public Map<String, Map<String, Integer>> searchTimeZones(
+           final Set<String> timeZonesSet)
    {
-      Map<String, Integer> result = new HashMap<>();
+      Map<String, Map<String, Integer>> results;
+      Set<String> timeZones = new HashSet<>(timeZonesSet);
+
+      // Get country codes from history from history
+      results = timeZones.stream().filter(timeZoneFileHistory::isInHistory)
+              .sequential()
+              .collect(Collectors.toMap(str -> str,
+                      timeZoneFileHistory::search));
+
+      // Remove from the set languages that were already found
+      timeZones = removeFoundTimeZones(results, timeZones);
+      if (timeZones.isEmpty())
+         return results;
+
+      // Search file with capitals
+      results.putAll(searchFile(timeZones, capitalFile, 2, 0));
+
+      // Remove from the set languages that were already found
+      timeZones = removeFoundTimeZones(results, timeZones);
+      if (timeZones.isEmpty())
+         return results;
+
+      // Search file with exceptions
+      results.putAll(searchFile(timeZones, exceptionFile, 0, 1));
+
+      // Remove from the set languages that were already found
+      timeZones = removeFoundTimeZones(results, timeZones);
+      if (timeZones.isEmpty())
+         return results;
+
+      System.out.println("Following time zones were not found."+
+              " Consider adding them to the exception file.");
+      timeZones.stream()
+              .map(timeZone -> "\t- " + timeZone)
+              .forEach(System.out::println);
+
+      return results;
+   }
+
+
+   private static Set<String> removeFoundTimeZones(
+           final Map<String, Map<String, Integer>> results,
+           final Set<String> timeZones)
+   {
+      return timeZones.stream()
+              .filter(str -> !results.keySet().contains(str))
+              .collect(Collectors.toSet());
+   }
+
+
+   private static Map<String, Map<String, Integer>> searchFile(
+           final Set<String> timeZone, final File file,
+           final int timeZoneColumn, final int countryCodeColumn)
+   {
+      Map<String, Map<String, Integer>> result = new HashMap<>();
       //search in exception file
       try (BufferedReader userBufferedReader = new BufferedReader(new
-              InputStreamReader(new FileInputStream(exceptionFile))))
+              InputStreamReader(new FileInputStream(file))))
       {
          result = userBufferedReader.lines()
-                 .filter(line -> line.split("\\t")[0].equals(timeZone))
-                 .map(this::takeCountrySetOnly)
-                 .flatMap(this::obtainCountries)
-                 .collect(Collectors.toMap(str -> str, str -> 1));
-                 //TODO check if toMap manages with two same countries
+                 .filter(line -> contains(timeZone, timeZoneColumn, line))
+                 .collect(Collectors.toMap(
+                         line -> getTimeZone(timeZoneColumn, line),
+                         line -> createMap(countryCodeColumn, line)
+                 ));
       }
       catch (FileNotFoundException e)
       {
          e.printStackTrace();
-         throw new RuntimeException("File with users data was not found " +
-                 "when opening input stream.");
+         throw new RuntimeException("File \"" + file.getName() +
+                 "\" was not found when opening input stream.");
       }
       catch (IOException e)
       {
@@ -91,15 +136,31 @@ public class TimeZone
    }
 
 
-   private Stream<String> obtainCountries(String setOfCountries)
+   private static Map<String, Integer> createMap(
+           final int countryCodeColumn,
+           final String line)
    {
-      String[] countries = setOfCountries.split(",");
-      return Stream.of(countries);
+      Map<String, Integer> countryMap = new HashMap<>();
+      String countries = getTimeZone(countryCodeColumn, line);
+      Arrays.asList(countries.split(",")).forEach
+              (country -> countryMap.put(country, 1));
+      return countryMap;
    }
 
 
-   private String takeCountrySetOnly(String line)
+   private static String getTimeZone(
+           final int timeZoneColumn,
+           final String line)
    {
-      return line.split("\\t")[1];
+      return line.split("\\t")[timeZoneColumn];
+   }
+
+
+   private static boolean contains(
+           final Set<String> timeZone,
+           final int timeZoneColumn,
+           final String line)
+   {
+      return timeZone.contains(getTimeZone(timeZoneColumn, line));
    }
 }

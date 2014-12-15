@@ -2,19 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e6e3c96d-7b20-471b-b178-e9c2da6026c1" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/tests/CoordinatesTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/tests/GeoNamesTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/utwente/salp2/rafal/JsonDataReader.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/utwente/salp2/rafal/geonames/Language.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/tests/LanguageTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/utwente/salp2/rafal/geonames/TimeZone.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/tests/TimeZoneTest.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/utwente/salp2/rafal/json/JsonDataTwitter.java" afterPath="$PROJECT_DIR$/src/com/utwente/salp2/rafal/json/JsonDataTweets.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/utwente/salp2/rafal/geonames/Coordinates.java" afterPath="$PROJECT_DIR$/src/com/utwente/salp2/rafal/geonames/Coordinates.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/tests/FileSpeedTest.java" afterPath="$PROJECT_DIR$/src/tests/FileSpeedTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/utwente/salp2/rafal/geonames/GeoNames.java" afterPath="$PROJECT_DIR$/src/com/utwente/salp2/rafal/geonames/GeoNames.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/utwente/salp2/rafal/MainClass.java" afterPath="$PROJECT_DIR$/src/com/utwente/salp2/rafal/MainClass.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/utwente/salp2/rafal/geonames/helpers/SearchHistory.java" afterPath="$PROJECT_DIR$/src/com/utwente/salp2/rafal/geonames/helpers/SearchHistory.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/utwente/salp2/rafal/geonames/Language.java" afterPath="$PROJECT_DIR$/src/com/utwente/salp2/rafal/geonames/Language.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/utwente/salp2/rafal/geonames/TimeZone.java" afterPath="$PROJECT_DIR$/src/com/utwente/salp2/rafal/geonames/TimeZone.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/tests/TimeZoneTest.java" afterPath="$PROJECT_DIR$/src/tests/TimeZoneTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="CountryTwitter.iws" />
@@ -40,54 +31,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Language.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Language.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/utwente/salp2/rafal/geonames/Language.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="113" max-vertical-offset="3456">
-              <caret line="16" column="75" selection-start-line="16" selection-start-column="75" selection-end-line="16" selection-end-column="75" />
+            <state vertical-scroll-proportion="0.58003443" vertical-offset="329" max-vertical-offset="3474">
+              <caret line="37" column="6" selection-start-line="37" selection-start-column="6" selection-end-line="41" selection-end-column="35" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TimeZone.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/utwente/salp2/rafal/geonames/TimeZone.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="221" max-vertical-offset="1872">
-              <caret line="29" column="43" selection-start-line="29" selection-start-column="43" selection-end-line="29" selection-end-column="43" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LanguageTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/tests/LanguageTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="594">
-              <caret line="22" column="45" selection-start-line="22" selection-start-column="45" selection-end-line="22" selection-end-column="45" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Coordinates.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/utwente/salp2/rafal/geonames/Coordinates.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="306" max-vertical-offset="1152">
-              <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CoordinatesTest.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/tests/CoordinatesTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.8181818" vertical-offset="0" max-vertical-offset="630">
-              <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -136,12 +87,12 @@
         <option value="$PROJECT_DIR$/src/com/utwente/salp2/rafal/JsonDataReader.java" />
         <option value="$PROJECT_DIR$/src/com/utwente/salp2/rafal/geonames/Coordinates.java" />
         <option value="$PROJECT_DIR$/src/tests/FileSpeedTest.java" />
-        <option value="$PROJECT_DIR$/src/com/utwente/salp2/rafal/geonames/GeoNames.java" />
         <option value="$PROJECT_DIR$/src/tests/GeoNamesTest.java" />
-        <option value="$PROJECT_DIR$/src/tests/TimeZoneTest.java" />
+        <option value="$PROJECT_DIR$/src/tests/LanguageTest.java" />
+        <option value="$PROJECT_DIR$/src/com/utwente/salp2/rafal/geonames/GeoNames.java" />
         <option value="$PROJECT_DIR$/src/com/utwente/salp2/rafal/geonames/Language.java" />
         <option value="$PROJECT_DIR$/src/com/utwente/salp2/rafal/geonames/TimeZone.java" />
-        <option value="$PROJECT_DIR$/src/tests/LanguageTest.java" />
+        <option value="$PROJECT_DIR$/src/tests/TimeZoneTest.java" />
       </list>
     </option>
   </component>
@@ -351,6 +302,8 @@
     <property name="recentsLimit" value="5" />
     <property name="dynamic.classpath" value="false" />
     <property name="restartRequiresConfirmation" value="true" />
+    <property name="extract.method.default.visibility" value="private" />
+    <property name="last.edited.regexp" value="" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.Recents.Supers">
@@ -365,34 +318,6 @@
     </key>
   </component>
   <component name="RunManager" selected="JUnit.all tests">
-    <configuration default="false" name="CoordinatesTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="CountryTwitter" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.CoordinatesTest" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
     <configuration default="false" name="TimeZoneTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -502,6 +427,34 @@
       <option name="PACKAGE_NAME" value="tests" />
       <option name="MAIN_CLASS_NAME" value="tests.LanguageTest" />
       <option name="METHOD_NAME" value="testSearchLanguages" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="TimeZoneTest.testSearchTimeZone" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="CountryTwitter" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.TimeZoneTest" />
+      <option name="METHOD_NAME" value="testSearchTimeZone" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -719,19 +672,19 @@
     <list size="7">
       <item index="0" class="java.lang.String" itemvalue="Application.MainClass" />
       <item index="1" class="java.lang.String" itemvalue="JUnit.all tests" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.CoordinatesTest" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.TimeZoneTest" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.GeoNamesTest" />
-      <item index="5" class="java.lang.String" itemvalue="JUnit.LanguageTest" />
-      <item index="6" class="java.lang.String" itemvalue="JUnit.LanguageTest.testSearchLanguages" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.TimeZoneTest" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.GeoNamesTest" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.LanguageTest" />
+      <item index="5" class="java.lang.String" itemvalue="JUnit.LanguageTest.testSearchLanguages" />
+      <item index="6" class="java.lang.String" itemvalue="JUnit.TimeZoneTest.testSearchTimeZone" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.LanguageTest.testSearchLanguages" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.LanguageTest" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.TimeZoneTest" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.GeoNamesTest" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.CoordinatesTest" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.TimeZoneTest.testSearchTimeZone" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.LanguageTest.testSearchLanguages" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.LanguageTest" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.TimeZoneTest" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.GeoNamesTest" />
       </list>
     </recent_temporary>
   </component>
@@ -758,7 +711,13 @@
       <option name="project" value="LOCAL" />
       <updated>1418507871758</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Implemented replacing raw strings from JSON with maps with country codes and their probabilities.">
+      <created>1418663831204</created>
+      <option name="number" value="00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1418663831204</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -795,7 +754,7 @@
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32686085" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32686085" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24765626" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -829,7 +788,8 @@
     <MESSAGE value="commit test" />
     <MESSAGE value="Implemented JsonData Extractor - works only with Strings currently. &#10;Appropriate tests are implemented." />
     <MESSAGE value="implemented extracting data from JSON files, implemented search for places by geonames.org webservice" />
-    <option name="LAST_COMMIT_MESSAGE" value="implemented extracting data from JSON files, implemented search for places by geonames.org webservice" />
+    <MESSAGE value="Implemented replacing raw strings from JSON with maps with country codes and their probabilities." />
+    <option name="LAST_COMMIT_MESSAGE" value="Implemented replacing raw strings from JSON with maps with country codes and their probabilities." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1162,14 +1122,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/utwente/salp2/rafal/geonames/GeoNames.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="810" max-vertical-offset="1404">
-          <caret line="52" column="21" selection-start-line="52" selection-start-column="21" selection-end-line="52" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/tests/FileSpeedTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="324" max-vertical-offset="1512">
@@ -1186,53 +1138,61 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/tests/TimeZoneTest.java">
+    <entry file="file://$PROJECT_DIR$/src/tests/CoordinatesTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="684">
-          <caret line="20" column="33" selection-start-line="20" selection-start-column="33" selection-end-line="20" selection-end-column="44" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/utwente/salp2/rafal/geonames/Language.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="113" max-vertical-offset="3456">
-          <caret line="16" column="75" selection-start-line="16" selection-start-column="75" selection-end-line="16" selection-end-column="75" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/utwente/salp2/rafal/geonames/TimeZone.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="221" max-vertical-offset="1872">
-          <caret line="29" column="43" selection-start-line="29" selection-start-column="43" selection-end-line="29" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/tests/LanguageTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="594">
-          <caret line="22" column="45" selection-start-line="22" selection-start-column="45" selection-end-line="22" selection-end-column="45" />
+        <state vertical-scroll-proportion="0.54180604" vertical-offset="0" max-vertical-offset="897">
+          <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/utwente/salp2/rafal/geonames/Coordinates.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="306" max-vertical-offset="1152">
+        <state vertical-scroll-proportion="0.27759197" vertical-offset="255" max-vertical-offset="1152">
           <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/tests/CoordinatesTest.java">
+    <entry file="file://$PROJECT_DIR$/src/tests/LanguageTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8181818" vertical-offset="0" max-vertical-offset="630">
-          <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.3411371" vertical-offset="0" max-vertical-offset="897">
+          <caret line="22" column="45" selection-start-line="22" selection-start-column="45" selection-end-line="22" selection-end-column="45" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/utwente/salp2/rafal/geonames/GeoNames.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="3" max-vertical-offset="1116">
+          <caret line="30" column="42" selection-start-line="30" selection-start-column="42" selection-end-line="30" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tests/TimeZoneTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.2727273" vertical-offset="0" max-vertical-offset="900">
+          <caret line="48" column="41" selection-start-line="48" selection-start-column="41" selection-end-line="48" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/utwente/salp2/rafal/geonames/TimeZone.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.3046472" vertical-offset="736" max-vertical-offset="2970">
+          <caret line="90" column="44" selection-start-line="90" selection-start-column="44" selection-end-line="90" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/utwente/salp2/rafal/geonames/Language.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.58003443" vertical-offset="329" max-vertical-offset="3474">
+          <caret line="37" column="6" selection-start-line="37" selection-start-column="6" selection-end-line="41" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

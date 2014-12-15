@@ -42,9 +42,10 @@ public class Language
       return results.get(language);
    }
 
-   public Map<String, Map<String, Integer>> searchLanguages(Set<String> languages)
+   public Map<String, Map<String, Integer>> searchLanguages(final Set<String> languagesSet)
    {
       Map<String, Map<String, Integer>> results;
+      Set<String> languages = new HashSet<>(languagesSet);
 
       // Get country codes from history from history
       results = languages.stream().filter(languageHistory::isInHistory)
