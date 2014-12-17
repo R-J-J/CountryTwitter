@@ -7,7 +7,7 @@ import java.util.*;
  * <p>
  * Class that holds collected info from JSON structure.
  * Keys that should be collected from JSON file have to be formatted as
- * "fieldName.nextFieldName.andSoOn".
+ * "$.fieldName.nextFieldName.andSoOn".
  * All values that match one of the keys will be added to appropriate array
  */
 public class JsonData
@@ -55,6 +55,12 @@ public class JsonData
       {
          addKey(key);
       }
+   }
+
+
+   public void removeKey(String key)
+   {
+      pathsMap.remove(key);
    }
 
 
@@ -125,16 +131,18 @@ public class JsonData
    @Override
    public String toString()
    {
+      String separator = System.getProperty("line.separator");
+      String text = "";
       for (String key : pathsMap.keySet())
       {
-         System.out.println(key);
+         text += key + separator;
          for (String value : pathsMap.get(key))
          {
-            System.out.print(value + "; ");
+            text += value + "; ";
          }
-         System.out.println();
+         text += separator;
       }
-      System.out.println();
-      return super.toString();
+      text += separator;
+      return text;
    }
 }

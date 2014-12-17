@@ -1,5 +1,6 @@
 package com.utwente.salp2.rafal;
 
+import com.utwente.salp2.rafal.geonames.UserCountryInfo;
 import com.utwente.salp2.rafal.json.JsonData;
 import com.utwente.salp2.rafal.json.JsonDataTweets;
 import com.utwente.salp2.rafal.json.JsonDataUser;
@@ -66,13 +67,24 @@ public class MainClass
 
 
    public void go()
+           throws Exception
    {
       //TODO print info about algorithm steps
       List<JsonData> userList = JsonDataReader.read(usersFile,
               JsonDataUser.class, tweetsDirectory, JsonDataTweets.class);
 
-      //TODO gather data about countries
-      userList.forEach(System.out::println);
+      //TODO do something with those file paths
+      String currentDirectory = System.getProperty("user.dir");
+      UserCountryInfoMapper ucim = new UserCountryInfoMapper(
+              currentDirectory + "/res/CountryInfo.csv",
+              currentDirectory + "/res/CountryInfo.csv",
+              currentDirectory + "/res/TimeZoneExceptions.txt",
+              "macdrag");
+
+      List<UserCountryInfo> userCountryInfoList = ucim.match(userList);
+
+      //TODO remove
+      userCountryInfoList.forEach(System.out::println);
    }
 }
 

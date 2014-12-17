@@ -17,10 +17,8 @@ import java.util.stream.Stream;
  *
  * Expected file structure:
  * Timezone \t comma-separated-country-codes
- *
- * TODO consider searching with set of timeZones due to exception file. There are capitals mostly and GeoNames counts all cities
  */
-public class TimeZone
+public class TimeZone implements GeoNamesSearcher
 {
    private final static int TIMEZONE_HISTORY_SIZE = 10;
    private SearchHistory<String, Map<String, Integer>> timeZoneFileHistory;
@@ -47,15 +45,15 @@ public class TimeZone
       Set<String> tempLanguage = new HashSet<>();
       tempLanguage.add(timeZone);
       Map<String, Map<String, Integer>> results;
-      results = searchTimeZones(tempLanguage);
+      results = search(tempLanguage);
       return results.get(timeZone);
    }
 
-   public Map<String, Map<String, Integer>> searchTimeZones(
-           final Set<String> timeZonesSet)
+   @Override
+   public Map<String, Map<String, Integer>> search(Set<String> toSearch)
    {
       Map<String, Map<String, Integer>> results;
-      Set<String> timeZones = new HashSet<>(timeZonesSet);
+      Set<String> timeZones = new HashSet<>(toSearch);
 
       // Get country codes from history from history
       results = timeZones.stream().filter(timeZoneFileHistory::isInHistory)

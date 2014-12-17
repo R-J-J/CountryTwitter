@@ -14,7 +14,7 @@ public class GeoNamesTest
    public void testSearchGeoName()
            throws Exception
    {
-      GeoNames geoNames = new GeoNames();
+      GeoNames geoNames = new GeoNames("macdrag");
       Map<String, Integer> result;
 
       result = geoNames.searchGeoName("Wałdowo Szlacheckie");

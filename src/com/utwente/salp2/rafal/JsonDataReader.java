@@ -109,6 +109,10 @@ public class JsonDataReader
             List<JsonData> tweets = readJsonData(userIdFile,
                     jsonDataTweetClass);
             tweets.stream().forEachOrdered(combinedData::combine);
+            //Because users and tweets have the same path to language info
+            //one of them must be renamed.
+            userData.rename(JsonDataUser.LANGUAGE,
+                    "user-" + JsonDataUser.LANGUAGE);
             combinedData.combine(userData);
             return combinedData;
          }

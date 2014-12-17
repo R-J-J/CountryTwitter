@@ -32,7 +32,7 @@ public class TimeZoneTest
       Set<String> timeZonesSet= new HashSet<>(
               Arrays.asList("Quito", "Eastern Time (US & Canada)"));
       Map<String, Map<String, Integer>> searchResults =
-              timeZone.searchTimeZones(timeZonesSet);
+              timeZone.search(timeZonesSet);
       Map<String, Integer> quito = searchResults.get("Quito");
       Map<String, Integer> easternTime =
               searchResults.get("Eastern Time (US & Canada)");

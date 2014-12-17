@@ -11,16 +11,29 @@ import java.util.*;
  * Responsibility of this class is to translate locations to
  * country codes.
  */
-public class GeoNames
+public class GeoNames implements GeoNamesSearcher
 {
-   private final static String USER_NAME = "macdrag";
    private final static int GEONAMES_HISTORY_SIZE = 10;
 
+   private final String userName;
    private SearchHistory<String, Map<String, Integer>> geoNameHistory;
 
-   public GeoNames()
+   public GeoNames(final String userName)
    {
       geoNameHistory = new SearchHistory<>(GEONAMES_HISTORY_SIZE);
+      this.userName = userName;
+   }
+
+   @Override
+   public Map<String, Map<String, Integer>> search(Set<String> toSearch)
+           throws Exception
+   {
+      Map<String, Map<String, Integer>> results = new HashMap<>();
+      for (String name : toSearch)
+      {
+         results.put(name, searchGeoNameWeb(name));
+      }
+      return results;
    }
 
    public Map<String, Integer> searchGeoName (String geoName)
@@ -36,7 +49,7 @@ public class GeoNames
    private Map<String, Integer> searchGeoNameWeb(String geoName)
            throws Exception
    {
-      WebService.setUserName(USER_NAME);
+      WebService.setUserName(userName);
 
       ToponymSearchCriteria searchCriteria = new ToponymSearchCriteria();
       searchCriteria.setQ(geoName);

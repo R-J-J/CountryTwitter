@@ -6,14 +6,18 @@ package com.utwente.salp2.rafal.json;
  */
 public class JsonDataTweets extends JsonData
 {
+   final public static String COORDINATES = "$.coordinates.coordinates";
+   final public static String LANGUAGE = "$.lang";
+   final public static String LOCATION = "$.user.location";
+
    public JsonDataTweets()
    {
       super();
       try
       {
-         addKey("$.coordinates.coordinates");
-         addKey("$.lang");
-         addKey("$.user.location");
+         addKey(COORDINATES);
+         addKey(LANGUAGE);
+         addKey(LOCATION);
       }
       catch (Exception e)
       {

@@ -7,6 +7,9 @@ package com.utwente.salp2.rafal.json;
 public class JsonDataUser extends JsonData
 {
    final public static String ID = "$.id";
+   final public static String TIME_ZONE = "$.time_zone";
+   final public static String LOCATION = "$.location";
+   final public static String LANGUAGE = "$.lang";
 
    public JsonDataUser()
    {
@@ -14,9 +17,9 @@ public class JsonDataUser extends JsonData
       try
       {
          addKey(ID);
-         addKey("$.time_zone");
-         addKey("$.location");
-         addKey("$.lang");
+         addKey(TIME_ZONE);
+         addKey(LOCATION);
+         addKey(LANGUAGE);
       }
       catch (Exception e)
       {

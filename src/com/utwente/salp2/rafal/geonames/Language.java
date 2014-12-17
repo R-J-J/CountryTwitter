@@ -5,7 +5,6 @@ import com.utwente.salp2.rafal.geonames.helpers.SearchHistory;
 import java.io.*;
 import java.util.*;
 import java.util.stream.Collectors;
-import java.util.stream.IntStream;
 
 /**
  * Created by rafal on 14.12.14.
@@ -16,7 +15,7 @@ import java.util.stream.IntStream;
  * Expected file structure:
  * ISO \t CountryName \t Capital \t population \t comma-separated-languages
  */
-public class Language
+public class Language implements GeoNamesSearcher
 {
    private final static int LANGUAGE_HISTORY_SIZE = 20;
    private SearchHistory<String, Map<String, Integer>> languageHistory;
@@ -33,19 +32,27 @@ public class Language
       }
    }
 
+
+   /**
+    *
+    * @param language two-three characters abbreviation
+    * @return Map that contains country codes and
+    * estimated number of people speaking this language
+    */
    public Map<String, Integer> searchLanguage(String language)
    {
       Set<String> tempLanguage = new HashSet<>();
       tempLanguage.add(language);
       Map<String, Map<String, Integer>> results;
-      results = searchLanguages(tempLanguage);
+      results = search(tempLanguage);
       return results.get(language);
    }
 
-   public Map<String, Map<String, Integer>> searchLanguages(final Set<String> languagesSet)
+   @Override
+   public Map<String, Map<String, Integer>> search(final Set<String> toSearch)
    {
       Map<String, Map<String, Integer>> results;
-      Set<String> languages = new HashSet<>(languagesSet);
+      Set<String> languages = new HashSet<>(toSearch);
 
       // Get country codes from history from history
       results = languages.stream().filter(languageHistory::isInHistory)
@@ -129,31 +136,8 @@ public class Language
          String[] langsArray = languages.split(",");
 
          Integer population = Integer.parseInt(columns[3]);
-         int denominator = sumDownToZero(langsArray.length);
-
-         // Remove additional info about languages
-         Map<String, Integer> langMap = new HashMap<>();
-         for (int i=0; i < langsArray.length; i++)
-         {
-            // Get rid of country specialization
-            String lang = langsArray[i].split("-")[0];
-
-            int nominator = langsArray.length - i;
-            Integer estimatedPopulation =
-                    (int) (nominator/(float)denominator * population);
-            if (langMap.containsKey(lang))
-            {
-               //Two specializations of the same language
-               Integer currentPopulation = langMap.get(lang);
-               langMap.put(lang, currentPopulation + estimatedPopulation);
-            }
-            else
-            {
-               langMap.put(lang, estimatedPopulation);
-            }
-         }
-
-         return langMap;
+         return getCountryAndNoOfPeople(langsArray,
+                 population);
       }
       catch (ArrayIndexOutOfBoundsException e)
       {
@@ -161,6 +145,36 @@ public class Language
          // Just skip line
          return new HashMap<>();
       }
+   }
+
+
+   private Map<String, Integer> getCountryAndNoOfPeople(
+           String[] langsArray,
+           Integer population)
+   {
+      int denominator = sumDownToZero(langsArray.length);
+
+      Map<String, Integer> langMap = new HashMap<>();
+      for (int i=0; i < langsArray.length; i++)
+      {
+         // Get rid of country specialization
+         String lang = langsArray[i].split("-")[0];
+
+         int nominator = langsArray.length - i;
+         Integer estimatedPopulation =
+                 (int) (nominator/(float)denominator * population);
+         if (langMap.containsKey(lang))
+         {
+            //Two specializations of the same language
+            Integer currentPopulation = langMap.get(lang);
+            langMap.put(lang, currentPopulation + estimatedPopulation);
+         }
+         else
+         {
+            langMap.put(lang, estimatedPopulation);
+         }
+      }
+      return langMap;
    }
 
 
