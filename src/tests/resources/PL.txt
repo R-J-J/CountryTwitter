@@ -1,0 +1,200 @@
+462259	Zodenen	Zodenen	Gospodskiy Dvor Zodenen,Sodehnen	54.38306	20.45639	P	PPLQ	PL	PL	85				0		163	Europe/Warsaw	2010-09-15
+477032	Varyazhanka	Varyazhanka	Mlynski Potok,Młyński Potok,Varenzhanka,Varezhanka,Varjazhanka,Varyazhanka,Warezanka,Warężanka,Варяжанка	50.63333	24.16667	H	STM	PL		00				0		179	Europe/Warsaw	2012-11-08
+487086	Strvyazh	Strvyazh	Reka Strvenzh,Reka Strvionzh,Strvyazh,Strwiaz,Strwiąż	49.6	23.46667	H	STM	PL	UA	00				0		264	Europe/Warsaw	2014-07-08
+490932	Solokiya	Solokiya	Fluss Solokija,Fluss Sołokija,Reka Solokiya,River Solokija,River Sołokija,Solokija,Solokiya,Sołokija	50.38333	24.25	H	STM	PL	UA	00				0		182	Europe/Warsaw	2014-07-08
+502656	Rata	Rata	Rata,Рата	50.35148	24.24569	H	STM	PL	UA	00				0		189	Europe/Warsaw	2014-07-08
+536359	Lekhnova	Lekhnova	Chaszczowka,Chaszczówka,Lechnowa,Lechnowka,Lechnówka,Lekhnova,Reka Lekhnova	49.26667	22.83333	H	STM	PL	UA	00				0		534	Europe/Warsaw	2014-07-08
+558461	Hrodzyenskaye Uzvyshsha	Hrodzyenskaye Uzvyshsha	Grodnenskaya Vozvyshennost',Grodnenskaya Vozvyshennost’,Grodnenskiye Vysoty,Hrodzyenskaye Uzvyshsha	53.66514	23.54748	T	HLLS	PL		81	2011	201106		0		131	Europe/Warsaw	2010-09-15
+570570	Kanal Butsovskiy	Kanal Butsovskiy	Kanal Bucowski,Kanal Butsovski,Kanal Butsovskiy,Kanał Bucowski	49.95	22.93333	H	CNL	PL	UA	80				0		184	Europe/Warsaw	2014-03-05
+620115	Włodawka	Wlodawka	Vlodavka,Wlodawka,Włodawka	51.53333	23.56667	P	PPL	PL	PL	75				0		154	Europe/Warsaw	2012-01-18
+752937	Zastawie	Zastawie	Krasniczyn-Zastawie,Kraśniczyn-Zastawie,Zastawie	50.93755	23.34217	P	PPL	PL	PL	75	0606	060606		0		198	Europe/Warsaw	2010-10-16
+752938	Wichrowiec	Wichrowiec	Hardichhausen,Wichrowice,Wichrowiec,Wychrowitz	53.35418	20.69279	P	PPL	PL		85				0		137	Europe/Warsaw	2012-01-19
+752939	Prędocin	Predocin	Predocin,Prendocin,Prędocin	51.14791	21.32704	P	PPL	PL	PL	78	1425	142503		536		206	Europe/Warsaw	2010-10-19
+752940	Parszywka	Parszywka	Parszywa,Parszywka	50.41667	20.41667	P	PPL	PL	PL	84				0		320	Europe/Warsaw	2012-01-19
+752941	Małszewko	Malszewko	Malschowen,Malschöwen,Malshofen,Malshöfen,Malszewko,Małszewko	53.58333	20.71667	P	PPL	PL	PL	85				0		130	Europe/Warsaw	2011-04-19
+752942	Poraj	Poraj	Kolonia Poraj,Poraj	50.89962	23.99191	P	PPL	PL	PL	75	0604	060403		266		196	Europe/Warsaw	2010-09-06
+752943	Zyzoga	Zyzoga		50.35	21.9	H	STM	PL		80				0		181	Europe/Warsaw	1993-12-28
+752944	Żyznowo	Zyznowo		53.04338	21.88255	P	PPL	PL		81				0		111	Europe/Warsaw	2011-06-06
+752945	Żyznów	Zyznow		50.61667	23.28333	P	PPL	PL		75				0		300	Europe/Warsaw	1993-12-28
+752946	Żyznów	Zyznow	Zyznow,Żyznów	49.81668	21.84781	P	PPL	PL		80				0		240	Europe/Warsaw	2012-05-06
+752947	Żyzniewo	Zyzniewo	Przystanek Zyzniewo,Zyzniewo,Żyzniewo	53.05275	21.88961	S	RSTN	PL		81				0		113	Europe/Warsaw	2012-01-19
+752948	Zyzdrój Wielki	Zyzdroj Wielki	Gross Sixdroi See,Gross Sysdroy See,Jezioro Zyzdroj,Jezioro Zyzdrój,Zyzdroj Wielki,Zyzdrój Wielki	53.65039	21.29228	H	LK	PL		85				0		126	Europe/Warsaw	2012-01-19
+752949	Zyzdrojowy Piecek	Zyzdrojowy Piecek	Sixdroi,Sixdroiofen,Sysdroyofen,Zyzdrojowy Piecek	53.65712	21.26672	P	PPL	PL		85				0		143	Europe/Warsaw	2012-01-19
+752950	Zyzdrojowa Wola	Zyzdrojowa Wola	Kranzhausen,Sysdroywolla,Zyzdrojowa Wola	53.65834	21.28335	P	PPL	PL		85				0		135	Europe/Warsaw	2012-01-19
+752951	Żywy	Zywy	Siewen,Stawki,Zywy,Żywy	54.05853	22.03597	P	PPL	PL		85				0		140	Europe/Warsaw	2012-01-19
+752952	Żywkowo	Zywkowo	Zywkowo,Żywkowo	52.96737	23.41004	P	PPL	PL		81				0		147	Europe/Warsaw	2014-04-06
+752953	Żywki	Zywki	Siewken,Zywki,Żywki	54.05735	21.96067	P	PPL	PL		85				0		135	Europe/Warsaw	2012-01-19
+752954	Żywawoda Szury	Zywawoda Szury		54.16643	22.86944	P	PPLX	PL		81				0		233	Europe/Warsaw	2011-04-19
+752955	Żywawoda Stara	Zywawoda Stara		54.17962	22.86025	P	PPLX	PL		81				0		215	Europe/Warsaw	2011-04-19
+752956	Żywawoda Pieńki	Zywawoda Pienki		54.17471	22.88062	P	PPLX	PL		81				0		243	Europe/Warsaw	2011-04-19
+752957	Żywa Woda	Zywa Woda	Zywa Woda,Żywa Woda	54.16772	22.88563	P	PPL	PL		81				0		230	Europe/Warsaw	2014-04-06
+752958	Żytowo	Zytowo	Settau,Zytowo,Żytowo	54.18449	20.62477	P	PPL	PL		85				0		78	Europe/Warsaw	2012-01-19
+752959	Żytnia	Zytnia		52.19966	22.23006	P	PPL	PL		78				0		137	Europe/Warsaw	2009-10-31
+752960	Żytkiejmy	Zytkiejmy	Szittkehmen,Szytkiejmy,Wehrkirchen,Zhitkejmy,Zytkiejmy,Żytkiejmy,Житкеймы	54.35305	22.69449	P	PPL	PL		85				0		186	Europe/Warsaw	2010-07-18
+752961	Zysławice	Zyslawice		50.19328	20.51628	P	PPL	PL		84	2603	260303		0		216	Europe/Warsaw	2010-09-10
+752962	Żyrzyn Dolny	Zyrzyn Dolny		51.5	22.08333	P	PPL	PL		75				0		155	Europe/Warsaw	1993-12-28
+752963	Żyrzyn	Zyrzyn	Zyrzyn,Zytzyn,Żyrzyn,Żytzyn	51.49918	22.0917	P	PPLA3	PL	PL	75	0614	061411		1400		153	Europe/Warsaw	2010-10-16
+752964	Żyrwiny	Zyrwiny	Zyrwiny,Żyrwiny	54.25916	23.11929	P	PPL	PL		81				0		192	Europe/Warsaw	2012-05-06
+752965	Żyrówek	Zyrowek	Zyrowek,Żyrówek	51.89917	20.95693	P	PPL	PL		78				0		122	Europe/Warsaw	2012-01-19
+752966	Żyrów	Zyrow	Zyrow,Żyrów	51.88539	20.9689	P	PPL	PL		78				0		126	Europe/Warsaw	2012-01-19
+752967	Żyrardów	Zyrardow	Zhirardov,Zhirarduv,Zirardova,Zyrardow,Zyrarduvas,ri la er du fu,Żyrardów,Žirardova,Žyrarduvas,Жирардов,Жирардув,日拉爾杜夫	52.0488	20.44599	P	PPLA2	PL		78	1438	143801		41179		118	Europe/Warsaw	2010-10-15
+752968	Żyraków	Zyrakow		50.08545	21.39622	P	PPLA3	PL		80	1803	180307		1400		187	Europe/Warsaw	2010-09-27
+752969	Zynie	Zynie	Zynie	50.45251	22.68955	P	PPL	PL		75				0		185	Europe/Warsaw	2012-01-19
+752970	Zyndranowa	Zyndranowa	Zyndranowa	49.42496	21.71924	P	PPL	PL		80				0		440	Europe/Warsaw	2012-01-19
+752971	Zyndaki	Zyndaki	Sonntag,Zyndaki	53.91555	21.17556	P	PPL	PL		00				0		142	Europe/Warsaw	2013-08-07
+752972	Żyłki	Zylki	Kozly,Kozły,Zylki,Zylki-Kozly,Zytki-Kozly,Żytki-Kozły,Żyłki,Żyłki-Kozły	51.85052	22.50292	P	PPL	PL	PL	75	0615	061507		0		154	Europe/Warsaw	2010-09-04
+752973	Żyliny	Zyliny		54.08333	22.13333	P	PPL	PL		85				0		161	Europe/Warsaw	2009-05-05
+752974	Żyliny	Zyliny	Zyliny,Żyliny	54.0747	22.78422	P	PPL	PL		81				0		174	Europe/Warsaw	2012-05-06
+752975	Żylin Stary	Zylin Stary		52.15243	20.16598	P	PPL	PL		78				0		83	Europe/Warsaw	2009-04-24
+752976	Żylin Nowy	Zylin Nowy	Zylin Gorny,Zylin Nowy,Żylin Górny,Żylin Nowy	52.16411	20.18678	P	PPL	PL		78				0		86	Europe/Warsaw	2012-01-19
+752977	Żylin Folwark	Zylin Folwark	Zylin Folwark,Zylin Kolonia,Żylin Folwark,Żylin Kolonia	52.15	20.16667	P	PPL	PL	PL	74				0		82	Europe/Warsaw	2012-01-19
+752978	Zygmunty	Zygmunty	Zygmunty	53.24697	22.82906	P	PPL	PL		81				0		111	Europe/Warsaw	2014-04-06
+752979	Zygmunty	Zygmunty	Zygmunty	51.79026	21.66044	P	PPL	PL		78				0		151	Europe/Warsaw	2012-05-06
+752980	Zygmunty	Zygmunty		50.56341	22.91371	P	PPL	PL		75				0		283	Europe/Warsaw	1993-12-28
+752981	Zygmuntowo	Zygmuntowo		52.83512	20.25329	P	PPL	PL		78				0		107	Europe/Warsaw	1993-12-28
+752982	Zygmuntowo	Zygmuntowo		52.73309	21.51113	P	PPL	PL		78				0		91	Europe/Warsaw	2011-05-08
+752983	Zygmuntówka	Zygmuntowka		50.91667	21.4	P	PPL	PL		84				0		180	Europe/Warsaw	1993-12-28
+752984	Zygmuntów	Zygmuntow	Zygmuntow,Zygmuntów	51.39953	20.56913	P	PPL	PL		78				0		205	Europe/Warsaw	2012-05-06
+752985	Zygmuntów	Zygmuntow	Kolonia Zygmuntow,Kolonia Zygmuntów,Zygmuntow,Zygmuntów	50.97483	22.88507	P	PPL	PL		75				0		257	Europe/Warsaw	2012-01-19
+752986	Jezioro Zygmunta Augusta	Jezioro Zygmunta Augusta	Jezioro Czechowskie,Jezioro Zygmunta Augusta	53.35099	22.90648	H	LK	PL		81				0		118	Europe/Warsaw	2012-01-19
+752987	Żydy	Zydy	Sieden,Zydy,Żydy	53.85	22.58333	P	PPL	PL		85				0		130	Europe/Warsaw	2012-01-19
+752988	Żydy	Zydy	Zydy,Żydy	51.55511	20.77312	P	PPL	PL		78				0		177	Europe/Warsaw	2012-05-06
+752989	Żydowskie	Zydowskie	Zydowskie,Żydowskie	49.466	21.48809	P	PPL	PL		80				0		508	Europe/Warsaw	2012-05-06
+752990	Żydowo	Zydowo	Siddau,Zydowo,Żydowo	54.31056	20.83917	P	PPL	PL	PL	85				0		87	Europe/Warsaw	2012-01-19
+752991	Żydówek	Zydowek		50.6047	20.63026	P	PPL	PL		84	2608	260802		0		264	Europe/Warsaw	2010-10-01
+752992	Żydów	Zydow		50.6	20.63333	P	PPL	PL		84				0		253	Europe/Warsaw	1993-12-28
+752993	Zydów	Zydow	Zydow,Zydów	50.1264	20.27753	P	PPL	PL		77				0		225	Europe/Warsaw	2012-05-06
+752994	Żydomice	Zydomice	Zydomice,Żydomice	51.79349	20.27165	P	PPL	PL		74				0		135	Europe/Warsaw	2012-05-06
+752995	Życzyn	Zyczyn	Zyczyn,Życzyn	51.67305	21.73505	P	PPL	PL		78				0		137	Europe/Warsaw	2012-05-06
+752996	Zyczanów	Zyczanow		49.5	20.7	P	PPL	PL		77				0		776	Europe/Warsaw	1993-12-28
+752997	Życiny	Zyciny	Zyciny,Życiny	50.6481	21.01865	P	PPL	PL		84				0		238	Europe/Warsaw	2012-01-19
+752998	Zychy	Zychy	Zychy	51.10223	20.25164	P	PPL	PL		84				0		223	Europe/Warsaw	2012-01-19
+752999	Żychowo	Zychowo	Zychowo,Żychowo	52.81278	20.16003	P	PPL	PL		78				0		113	Europe/Warsaw	2012-05-06
+753000	Żychówki	Zychowki	Zychowki,Żychówki	50.92209	21.87496	P	PPL	PL		75				0		172	Europe/Warsaw	2013-04-04
+753001	Zychorzyn	Zychorzyn	Zychorzyn	51.4338	20.53439	P	PPL	PL		78				0		168	Europe/Warsaw	2012-05-06
+753002	Zybułtowo	Zybultowo	Seewalde,Zybultowo,Zybułtowo	53.49831	20.17213	P	PPL	PL		85				0		183	Europe/Warsaw	2012-01-19
+753003	Zwoleńka	Zwolenka	Lucimia,Lucymia,Zwolenka,Zwoleńka	51.26667	21.81667	H	STM	PL	PL	78				0		121	Europe/Warsaw	2012-01-19
+753004	Zwoleń	Zwolen	Zvolen,Zvolen',Zvolena,Zvoleņa,zi wo lun,Зволен,Зволень,茲沃倫	51.35542	21.58768	P	PPLA2	PL		78	1436	143605		8048		153	Europe/Warsaw	2010-09-19
+753005	Zwola Stara	Zwola Stara	Zwola,Zwola Stara	51.43048	21.76761	P	PPL	PL		78				0		151	Europe/Warsaw	2012-01-19
+753006	Zwola Poduchowna	Zwola Poduchowna		51.86981	21.87756	P	PPL	PL		78	1403	140308		0		172	Europe/Warsaw	2010-09-07
+753007	Zwolaki	Zwolaki		50.49793	22.32636	P	PPL	PL		80				0		159	Europe/Warsaw	1993-12-28
+753008	Zwola	Zwola		51.88158	21.8767	P	PPL	PL		78	1403	140308		0		181	Europe/Warsaw	2010-09-07
+753009	Zwola	Zwola	Zwola	50.84392	21.28143	P	PPL	PL		84				0		265	Europe/Warsaw	2014-04-06
+753010	Zwódne	Zwodne	Zawodna,Zwodne,Zwódne	50.68167	23.25858	P	PPL	PL		75				0		217	Europe/Warsaw	2012-01-19
+753011	Żwir	Zwir		52.21667	21.25	P	PPL	PL		78				0		101	Europe/Warsaw	1993-12-28
+753012	Żwikiele	Zwikiele	Zwikiele,Żwikiele	54.2	23.25	P	PPL	PL		81				0		155	Europe/Warsaw	2012-05-06
+753013	Stacja Zwierzyniec Wies	Stacja Zwierzyniec Wies		50.6	22.98333	S	RSTN	PL		75				0		240	Europe/Warsaw	1993-12-28
+753014	Zwierzyniec Wielki	Zwierzyniec Wielki	Zwierzyniec Wielki	53.6637	23.19968	P	PPLX	PL		81				0		154	Europe/Warsaw	2012-05-06
+753015	Zwierzyniec Mały	Zwierzyniec Maly	Zwierzyniec Maly,Zwierzyniec Mały	53.66225	23.21715	P	PPLX	PL		81				0		159	Europe/Warsaw	2012-05-06
+753016	Zwierzyniec	Zwierzyniec		53.66667	23.21667	P	PPL	PL		81				0		152	Europe/Warsaw	1993-12-28
+753017	Zwierzyniec	Zwierzyniec	Zwierzynice,Zwierzyniec	53.10727	21.13136	P	PPL	PL		78				0		116	Europe/Warsaw	2012-01-19
+753018	Zwierzyniec	Zwierzyniec		52.44251	21.23505	P	PPL	PL		78				0		89	Europe/Warsaw	2011-06-06
+753019	Zwierzyniec	Zwierzyniec		52.27119	20.29413	P	PPL	PL		78				0		80	Europe/Warsaw	2009-04-24
+753020	Zwierzyniec	Zwierzyniec	Zvezhinec,Zvezhinec',Zvezineca,Zvežiņeca,Zwierzyniec,zi wei ri nie ci,Звежинец,Звежинець,茲維日涅茨	50.614	22.97512	P	PPLA3	PL		75	0620	062015		3297		225	Europe/Warsaw	2010-10-14
+753021	Zwierzyniec	Zwierzyniec		50.51255	20.71009	P	PPL	PL		84	2601	260101		0		269	Europe/Warsaw	2010-10-01
+753022	Zwierzyń	Zwierzyn		49.44631	22.38181	P	PPL	PL		80				0		353	Europe/Warsaw	2008-09-15
+753023	Zwierzewo	Zwierzewo	Thierberg,Tyrbark,Zwierzewo	53.709	20.0461	P	PPL	PL	PL	85	2815	281509		0		114	Europe/Warsaw	2010-10-16
+753024	Zwierżany	Zwierzany		53.50132	23.50868	P	PPL	PL		81	2011	201107		0		164	Europe/Warsaw	2010-09-15
+753025	Zwiernik	Zwiernik		49.93885	21.20825	P	PPL	PL		80	1803	180306		0		277	Europe/Warsaw	2010-09-10
+753026	Zwierki	Zwierki	Zwierki	53.05268	23.28875	P	PPL	PL		81				0		157	Europe/Warsaw	2012-01-19
+753027	Zwięczyca	Zwieczyca		50.00597	21.9603	P	PPL	PL		80	1863	186301		0		223	Europe/Warsaw	2010-11-28
+753028	Zwiartówek	Zwiartowek	Zwiartowek,Zwiartówek	50.56688	23.53703	P	PPL	PL		75				0		221	Europe/Warsaw	2012-05-06
+753029	Zwiartów	Zwiartow	Zwiartow,Zwiartów	50.56479	23.50245	P	PPL	PL		75				0		235	Europe/Warsaw	2012-01-19
+753030	Zuzułka	Zuzulka	Zuzulka,Zuzułka	52.47956	21.99563	P	PPL	PL		78				0		132	Europe/Warsaw	2012-05-06
+753031	Zuzela	Zuzela	Zuzel,Zuzela	52.70261	22.23856	P	PPL	PL		78				0		107	Europe/Warsaw	2012-01-19
+753032	Zuzanów	Zuzanow	Zuzanow,Zuzanów	51.9205	21.38247	P	PPL	PL		78				0		98	Europe/Warsaw	2012-05-06
+753033	Zuzanny	Zuzanny		53.26428	21.61451	P	PPL	PL		78				0		108	Europe/Warsaw	2011-05-08
+753034	Zuśno	Zusno	Zusno,Zuśno	54.14486	22.67384	P	PPL	PL		81				0		184	Europe/Warsaw	2012-01-19
+753035	Żuski	Zuski		51.70416	20.41981	P	PPL	PL		74	1013	101303		0		152	Europe/Warsaw	2010-10-01
+753036	Zusenko	Zusenko	Zusenko	54.21257	22.70104	P	PPL	PL		81				0		210	Europe/Warsaw	2012-05-06
+753037	Żurowa	Zurowa		49.82636	21.16894	P	PPL	PL		77	1216	121616		2321		299	Europe/Warsaw	2010-10-17
+753038	Żurominek	Zurominek	Zhurominek,Zurominek,Żurominek,Журоминек	53.00071	20.32943	P	PPL	PL		78				0		134	Europe/Warsaw	2012-01-19
+753039	Żurobice	Zurobice	Zurobice,Zyrobice,Żurobice,Żyrobice	52.52406	22.93146	P	PPL	PL		81				0		167	Europe/Warsaw	2012-01-19
+753040	Żurawniki	Zurawniki	Zurawnik,Zurawniki,Żurawnik,Żurawniki	51.22742	22.84616	P	PPL	PL	PL	75	0617	061702		0		177	Europe/Warsaw	2010-09-09
+753041	Żurawniki	Zurawniki		50.75181	21.50867	P	PPL	PL		84				0		234	Europe/Warsaw	2009-05-05
+753042	Żurawniki	Zurawniki		50.37974	20.62855	P	PPL	PL		84	2608	260805		0		186	Europe/Warsaw	2010-10-07
+753043	Żurawnica	Zurawnica		50.65098	22.96208	P	PPL	PL		75				0		234	Europe/Warsaw	1993-12-28
+753044	Żurawlów	Zurawlow	Zurawiow,Zurawlow,Żurawiów,Żurawlów	50.81738	23.48722	P	PPL	PL		75				0		202	Europe/Warsaw	2012-01-19
+753045	Żurawka	Zurawka	Zorawka,Zurawka,Żurawka,Żórawka	52.23315	21.28505	P	PPL	PL		78				0		103	Europe/Warsaw	2012-01-19
+753046	Żurawka	Zurawka	Zurawka,Żurawka	51.8117	20.43784	P	PPL	PL		74				0		163	Europe/Warsaw	2012-05-06
+753047	Zurawieniec Lisowski	Zurawieniec Lisowski		51.53666	21.18631	P	PPL	PL		78				0		146	Europe/Warsaw	2011-06-06
+753048	Żurawieniec	Zurawieniec	Zurawiec,Zurawieniec,Żurawiec,Żurawieniec	51.59204	22.56999	P	PPL	PL		75				0		149	Europe/Warsaw	2012-01-19
+753049	Żurawieniec	Zurawieniec		51.35	21.05	P	PPL	PL		78				0		189	Europe/Warsaw	1993-12-28
+753050	Żurawieniec	Zurawieniec		50.01667	21.18333	P	PPL	PL		77				0		236	Europe/Warsaw	1993-12-28
+753051	Żurawiec	Zurawiec	Zurawiec,Żurawiec	51.68346	22.18578	P	PPL	PL		75				0		175	Europe/Warsaw	2012-05-06
+753052	Żurawie	Zurawie	Zurawie,Żurawie	50.80283	22.78028	P	PPL	PL		75				0		211	Europe/Warsaw	2012-05-06
+753053	Żurawiczki	Zurawiczki		50.0137	22.49949	P	PPL	PL		80	1814	181409		1247		190	Europe/Warsaw	2010-10-13
+753054	Żurawica	Zurawica		50.69602	21.68358	P	PPL	PL		84	2609	260906		461		212	Europe/Warsaw	2010-09-25
+753055	Żurawica	Zurawica		50.54963	21.55076	P	PPL	PL		84				0		150	Europe/Warsaw	2009-05-05
+753056	Żurawica	Zurawica		49.82348	22.78925	P	PPLA3	PL		80	1813	181310		4702		218	Europe/Warsaw	2010-09-25
+753057	Żurawianka	Zurawianka		52.62632	20.34046	H	STM	PL		78				0		95	Europe/Warsaw	1993-12-28
+753058	Żurawce	Zurawce	Zurawce,Żurawce	50.38209	23.54642	P	PPL	PL		75				0		250	Europe/Warsaw	2012-05-06
+753059	Żupawka	Zupawka		50.61667	21.78333	H	STM	PL		80				0		142	Europe/Warsaw	1993-12-28
+753060	Żupawa	Zupawa	Zupawa,Żupawa	50.57767	21.77854	P	PPL	PL		80				0		149	Europe/Warsaw	2012-01-19
+753061	Stacja Zulin	Stacja Zulin		51.06667	23.18333	S	RSTN	PL		75				0		187	Europe/Warsaw	1993-12-28
+753062	Żulin	Zulin	Zulin,Żulin	52.49111	21.88551	P	PPL	PL		78				0		127	Europe/Warsaw	2012-01-19
+753063	Żulin	Zulin		51.07457	23.19068	P	PPL	PL		75	0606	060607		0		186	Europe/Warsaw	2010-09-09
+753064	Żulice	Zulice		50.53285	23.809	P	PPL	PL		75	0618	061810		0		213	Europe/Warsaw	2011-01-08
+753065	Żuk Stary	Zuk Stary	Zuk Stary,Żuk Stary	50.50316	22.39793	P	PPL	PL		80				0		167	Europe/Warsaw	2012-01-19
+753066	Żukowo-Wawrzonki	Zukowo-Wawrzonki		52.76336	20.06413	P	PPL	PL		78	1420	142010		0		112	Europe/Warsaw	2010-09-18
+753067	Żukowo Strusie	Zukowo Strusie		52.77313	20.03974	P	PPL	PL		78				0		113	Europe/Warsaw	1993-12-28
+753068	Żukowo	Zukowo		52.50195	20.26127	P	PPL	PL		78				0		134	Europe/Warsaw	1993-12-28
+753069	Żuków Łagodziński	Zukow Lagodzinski	Kolonia Zukow Lagodzinski,Kolonia Zuków Łagodziński,Zukow Lagodzinski,Żuków Łagodziński	50.78333	23.43333	P	PPL	PL	PL	75				0		250	Europe/Warsaw	2012-01-19
+753070	Stare Żukowice	Stare Zukowice	Zukowice,Zukowice Stare,Żukowice,Żukowice Stare	50.0881	21.10748	P	PPL	PL	PL	77	1216	121603		0		228	Europe/Warsaw	2010-09-12
+753071	Nowe Żukowice	Nowe Zukowice		50.08656	21.13958	P	PPL	PL		77	1216	121603		0		222	Europe/Warsaw	2010-09-12
+753072	Żuków	Zukow	Zukow,Zukowka,Żuków,Żukówka	52.26797	20.26339	P	PPL	PL		78				0		71	Europe/Warsaw	2012-01-19
+753073	Żuków	Zukow		52.23805	22.1172	P	PPL	PL		78				0		134	Europe/Warsaw	2009-10-31
+753074	Żuków	Zukow		52.14998	20.64734	P	PPL	PL		78				0		91	Europe/Warsaw	2009-05-28
+753075	Żuków	Zukow		51.98784	20.40994	P	PPL	PL		78	1438	143803		0		147	Europe/Warsaw	2010-10-15
+753076	Żuków	Zukow	Zukow,Żuków	51.61082	23.4081	P	PPL	PL		75				0		164	Europe/Warsaw	2012-01-19
+753077	Żuków	Zukow		51.33935	20.74425	P	PPL	PL		78	1423	142308		0		179	Europe/Warsaw	2010-09-19
+753078	Żuków	Zukow		51.03639	22.76862	P	PPL	PL		75				0		207	Europe/Warsaw	1993-12-28
+753079	Żuków	Zukow	Zukow,Żuków	50.78714	23.46349	P	PPL	PL		75				0		223	Europe/Warsaw	2012-01-19
+753080	Żuków	Zukow		50.65067	21.61506	P	PPL	PL		84				0		163	Europe/Warsaw	2009-05-05
+753081	Żuków	Zukow		50.38866	20.8742	P	PPL	PL		84				0		206	Europe/Warsaw	1993-12-28
+753082	Żuków	Zukow	Zukow,Żuków	50.27718	23.14833	P	PPL	PL		80				0		221	Europe/Warsaw	2014-04-06
+753083	Żuków	Zukow		49.38416	22.58377	T	MT	PL		80				0		747	Europe/Warsaw	2009-11-18
+753084	Żuk Nowy	Zuk Nowy	Zuk Nowy,Żuk Nowy	50.48932	22.4024	P	PPL	PL		80				0		168	Europe/Warsaw	2012-01-19
+753085	Żuklin	Zuklin	Zuklin,Żuklin	49.98333	22.43077	P	PPL	PL		80				0		217	Europe/Warsaw	2012-01-19
+753086	Żuki	Zuki		53.44809	23.43524	P	PPL	PL		81				0		155	Europe/Warsaw	2011-06-06
+753087	Żuki	Zuki		53.24628	22.72754	P	PPL	PL		81				0		111	Europe/Warsaw	2011-06-06
+753088	Żuki	Zuki		53.01444	23.25067	P	PPL	PL		81				0		159	Europe/Warsaw	2011-06-06
+753089	Żuki	Zuki		52.57246	23.24737	P	PPL	PL		81				0		162	Europe/Warsaw	2011-06-06
+753090	Żuki	Zuki		52.02345	23.6582	P	PPL	PL		75				0		133	Europe/Warsaw	2008-07-24
+753091	Żuki	Zuki		51.81135	23.41236	P	PPL	PL		75				0		156	Europe/Warsaw	2011-06-06
+753092	Żugienie	Zugienie	Sugnienen,Zugienie,Żugienie	54.2561	20.07954	P	PPL	PL		85				0		100	Europe/Warsaw	2012-01-19
+753093	Zucielec	Zucielec		53.34778	22.69037	P	PPL	PL		81	2008	200807		0		127	Europe/Warsaw	2010-09-05
+753094	Zubrzyk	Zubrzyk	Zubrzyk	49.38851	20.75646	P	PPL	PL		77				0		416	Europe/Warsaw	2012-05-06
+753095	Zubrzyca Wielka	Zubrzyca Wielka	Zubrzyca Wielka	53.38765	23.71374	P	PPL	PL		81				0		177	Europe/Warsaw	2012-01-19
+753096	Zubrzyca Mała	Zubrzyca Mala	Zubrzyca Mala,Zubrzyca Mała	53.3768	23.73	P	PPL	PL		81				0		161	Europe/Warsaw	2012-01-19
+753097	Żubrynek	Zubrynek	Zubrynek,Żubrynek	54.01802	22.79654	P	PPL	PL		81				0		160	Europe/Warsaw	2012-05-06
+753098	Żubry	Zubry	Zubry,Żubry	53.06747	23.81796	P	PPL	PL		81				0		148	Europe/Warsaw	2012-01-19
+753099	Jezioro Żubrowo	Jezioro Zubrowo		54.105	23.14322	H	LK	PL		81				0		129	Europe/Warsaw	2011-04-19
+753100	Żubrówka	Zubrowka		54.08333	23.15	P	PPL	PL		81				0		134	Europe/Warsaw	1993-12-28
+753101	Żubronajce	Zubronajce	Zubronajce,Zubronajcie,Żubronajce	54.1214	23.12951	P	PPL	PL		81				0		143	Europe/Warsaw	2012-01-19
+753102	Żubracze	Zubracze	Zubiacze	49.20964	22.26946	P	PPL	PL	PL	80				0		625	Europe/Warsaw	2008-09-15
+753103	Zubowo	Zubowo	Zubowo,Zubuwo	52.84598	23.29268	P	PPL	PL		81				0		144	Europe/Warsaw	2012-01-19
+753104	Zubowice	Zubowice	Zubowice	50.62109	23.55706	P	PPL	PL		75				0		222	Europe/Warsaw	2012-05-06
+753105	Zubole	Zubole		53.34317	22.66634	P	PPL	PL		81	2008	200807		0		121	Europe/Warsaw	2010-09-05
+753106	Zubki Małe	Zubki Male	Zubki Male,Zubki Małe	51.70199	20.21033	P	PPL	PL		74				0		153	Europe/Warsaw	2012-01-19
+753107	Zubki Duże	Zubki Duze	Zubki Duze,Zubki Duże	51.6949	20.20379	P	PPL	PL		74				0		162	Europe/Warsaw	2012-05-06
+753108	Zubki	Zubki	Zubki	53.08744	23.81637	P	PPL	PL		81				0		146	Europe/Warsaw	2012-01-19
+753109	Zubeńsko	Zubensko	Zubensko,Zubeńsko,Zubnesko,Zubnésko	49.23203	22.09641	P	PPL	PL		80				0		558	Europe/Warsaw	2012-01-19
+753110	Zubeńsko	Zubensko		49.2	22.26667	P	PPL	PL		80				0		732	Europe/Warsaw	1993-12-28
+753111	Zubacze	Zubacze	Zubacze	52.45242	23.31198	P	PPL	PL		81				0		161	Europe/Warsaw	2013-04-04
+753112	Zubacze	Zubacze		52.45	23.3	P	PPL	PL		81				0		154	Europe/Warsaw	1993-12-28
+753113	Zrubań	Zruban		49.47348	21.94674	T	MT	PL		80				0		773	Europe/Warsaw	2009-11-14
+753114	Źrodłowka	Zrodlowka		49.7	20.36667	P	PPL	PL		77				0		519	Europe/Warsaw	1993-12-28
+753115	Żróbki	Zrobki		53.76657	22.74221	P	PPL	PL		81	2001	200103		0		130	Europe/Warsaw	2010-09-18
+753116	Zręczyce	Zreczyce		49.887	20.21793	P	PPL	PL		77	1219	121902		581		298	Europe/Warsaw	2010-11-03
+753117	Zręcze Małe	Zrecze Male		50.60568	20.7851	P	PPL	PL		84	2604	260404		0		217	Europe/Warsaw	2010-10-01
+753118	Zręcze Duże	Zrecze Duze	Zrecze,Zrecze Duze,Zręcze Duże	50.60723	20.80324	P	PPL	PL		84				0		220	Europe/Warsaw	2012-01-19
+753119	Zręcin	Zrecin		49.6591	21.69452	P	PPL	PL		80	1807	180701		0		285	Europe/Warsaw	2010-09-25
+753120	Zrębin	Zrebin		50.4422	21.24086	P	PPL	PL		84	2612	261205		0		168	Europe/Warsaw	2010-09-10
+753121	Żrebce	Zrebce		50.75085	22.93387	P	PPL	PL		75	0620	062012		0		206	Europe/Warsaw	2010-10-16
+753122	Zosinowo	Zosinowo	Zosinowo	51.86833	22.65369	P	PPL	PL		75				0		151	Europe/Warsaw	2012-01-19
+753123	Zosinek	Zosinek	Zosinek	51.08172	22.21791	P	PPL	PL		75				0		218	Europe/Warsaw	2012-01-19
+753124	Zosin	Zosin		51.61067	22.12574	P	PPL	PL		75				0		163	Europe/Warsaw	1993-12-28
+753125	Zosin	Zosin	Kolonia Zosin,Zosin	51.24242	23.14192	P	PPL	PL		75				0		176	Europe/Warsaw	2012-01-19
+753126	Zosin	Zosin		51.18634	22.31684	P	PPL	PL		75				0		201	Europe/Warsaw	2010-08-14
+753127	Zosin	Zosin		51.14229	22.02629	P	PPL	PL		75				0		157	Europe/Warsaw	1993-12-28
