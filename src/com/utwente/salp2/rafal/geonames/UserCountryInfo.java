@@ -1,14 +1,16 @@
 package com.utwente.salp2.rafal.geonames;
 
+import java.io.Serializable;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Set;
 
 /**
  * Created by rafal on 15.12.14.
  *
  * This class holds maps of countries and their probabilities for each label
  */
-public class UserCountryInfo
+public class UserCountryInfo implements Serializable
 {
    private Map<String, Map<String, Float>> userCountryInfo;
    private String id;
@@ -23,18 +25,22 @@ public class UserCountryInfo
            throws Exception
    {
       if (userCountryInfo.containsKey(key))
-         throw new Exception("UserCountryData contains already key: "+key);
+         throw new Exception("UserCountryData contains already key: " + key);
 
       userCountryInfo.put(key, countryInfo);
    }
 
    public Map<String, Float> getData(String key)
-           throws Exception
    {
       if (!userCountryInfo.containsKey(key))
-         throw new Exception("UserCountryData does not contain key: "+key);
+         return new HashMap<>();
 
       return userCountryInfo.get(key);
+   }
+
+   public Set<String> getKeys()
+   {
+      return userCountryInfo.keySet();
    }
 
 

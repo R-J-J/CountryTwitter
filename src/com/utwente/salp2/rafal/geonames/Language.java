@@ -15,7 +15,7 @@ import java.util.stream.Collectors;
  * Expected file structure:
  * ISO \t CountryName \t Capital \t population \t comma-separated-languages
  */
-public class Language implements GeoNamesSearcher
+public class Language implements DataSearcher
 {
    private final static int LANGUAGE_HISTORY_SIZE = 20;
    private SearchHistory<String, Map<String, Integer>> languageHistory;

@@ -1,4 +1,4 @@
-package com.utwente.salp2.rafal;
+package com.utwente.salp2.rafal.json;
 
 import com.utwente.salp2.rafal.json.JsonData;
 import com.utwente.salp2.rafal.json.JsonDataExtractor;
@@ -33,11 +33,13 @@ public class JsonDataReader
            File jsonFile,
            Class<? extends JsonData> jsonType)
    {
-      List<JsonData> jsonData = new ArrayList<>();
+      List<JsonData> jsonDataList = new ArrayList<>();
       try (BufferedReader userBufferedReader = new BufferedReader(new InputStreamReader(new FileInputStream(jsonFile))))
       {
-         jsonData = userBufferedReader.lines()
-                 .map(line -> lineToJsonDataUserStream(line, jsonType)).collect(Collectors.toList());
+         jsonDataList = userBufferedReader.lines()
+                 .map(line -> lineToJsonDataUserStream(line, jsonType))
+                 .filter(jsonData -> jsonData != null)
+                 .collect(Collectors.toList());
       }
       catch (FileNotFoundException e)
       {
@@ -52,7 +54,7 @@ public class JsonDataReader
          // If file stay unclosed, nothing really bad will happen.
       }
 
-      return jsonData;
+      return jsonDataList;
       // There were complaints about uninitialized variable due to IOException,
       // but in fact usersData will be assigned before throwing it.
    }

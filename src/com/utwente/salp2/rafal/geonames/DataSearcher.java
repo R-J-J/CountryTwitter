@@ -6,7 +6,7 @@ import java.util.Set;
 /**
  * Created by rafal on 16.12.14.
  */
-public interface GeoNamesSearcher
+public interface DataSearcher
 {
    public Map<String, Map<String, Integer>> search(final Set<String> toSearch)
            throws Exception;

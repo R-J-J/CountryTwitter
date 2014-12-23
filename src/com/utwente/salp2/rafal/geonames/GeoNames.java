@@ -11,7 +11,7 @@ import java.util.*;
  * Responsibility of this class is to translate locations to
  * country codes.
  */
-public class GeoNames implements GeoNamesSearcher
+public class GeoNames implements DataSearcher
 {
    private final static int GEONAMES_HISTORY_SIZE = 10;
 

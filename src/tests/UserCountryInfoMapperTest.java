@@ -1,13 +1,12 @@
 package tests;
 
-import com.utwente.salp2.rafal.UserCountryInfoMapper;
+import com.utwente.salp2.rafal.geonames.UserCountryInfoMapper;
 import com.utwente.salp2.rafal.geonames.UserCountryInfo;
 import com.utwente.salp2.rafal.json.JsonData;
 import com.utwente.salp2.rafal.json.JsonDataTweets;
 import com.utwente.salp2.rafal.json.JsonDataUser;
 import org.junit.Test;
 
-import javax.json.Json;
 import java.lang.reflect.Method;
 import java.util.*;
 
@@ -40,6 +39,7 @@ public class UserCountryInfoMapperTest
               basePath + "CountryInfo.csv",
               basePath + "CountryInfo.csv",
               basePath + "TimeZoneExceptions.txt",
+              "/home/rafal/Desktop/SALP2 Assignment 2/groundtruth/groundtruth.txt",
               "macdrag");
 
       Method xx = UserCountryInfoMapper.class.getDeclaredMethod("extract",
@@ -68,6 +68,7 @@ public class UserCountryInfoMapperTest
               basePath + "CountryInfo.csv",
               basePath + "CountryInfo.csv",
               basePath + "TimeZoneExceptions.txt",
+              "/home/rafal/Desktop/SALP2 Assignment 2/groundtruth/groundtruth.txt",
               "macdrag");
 
       //JsonData with all keys

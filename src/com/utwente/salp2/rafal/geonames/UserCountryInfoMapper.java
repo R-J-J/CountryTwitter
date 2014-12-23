@@ -1,4 +1,4 @@
-package com.utwente.salp2.rafal;
+package com.utwente.salp2.rafal.geonames;
 
 import com.utwente.salp2.rafal.geonames.*;
 import com.utwente.salp2.rafal.geonames.TimeZone;
@@ -17,20 +17,21 @@ import java.util.stream.Stream;
  */
 public class UserCountryInfoMapper
 {
-   final private static String TWEET_COORDINATES = "$.coordinates.coordinates";
-   final private static String TWEET_LANGUAGE = "$.lang";
-   final private static String TWEET_LOCATION = "$.user.location";
-   final private static String USER_ID = "$.id";
-   final private static String USER_TIME_ZONE = "$.time_zone";
-   final private static String USER_LOCATION = "$.location";
-   final private static String USER_LANGUAGE = "user-$.lang";
-   final private static Integer pruneMapWithProbabilities = 5;
+   final public static String TWEET_COORDINATES = "$.coordinates.coordinates";
+   final public static String TWEET_LANGUAGE = "$.lang";
+   final public static String TWEET_LOCATION = "$.user.location";
+   final public static String USER_ID = "$.id";
+   final public static String USER_TIME_ZONE = "$.time_zone";
+   final public static String USER_LOCATION = "$.location";
+   final public static String USER_LANGUAGE = "user-$.lang";
+   final public static Integer pruneMapWithProbabilities = 0;
 
-   final private Map<String, GeoNamesSearcher> searchers;
+   final private Map<String, DataSearcher> searchers;
 
    public UserCountryInfoMapper(String languageFilePath,
                                 String capitalsFilePath,
                                 String exceptionFilePath,
+                                String groundTrueFilePath,
                                 String geoNamesUserName)
            throws Exception
    {
@@ -38,19 +39,21 @@ public class UserCountryInfoMapper
       TimeZone timeZone = new TimeZone(capitalsFilePath, exceptionFilePath);
       GeoNames geoNames = new GeoNames(geoNamesUserName);
       Coordinates coordinates = new Coordinates(geoNamesUserName);
+      GroundTrue groundTrue = new GroundTrue(groundTrueFilePath);
 
       searchers = new HashMap<>();
-//      searchers.put(TWEET_COORDINATES, coordinates);
+      searchers.put(TWEET_COORDINATES, coordinates);
       searchers.put(TWEET_LANGUAGE, language);
-//      searchers.put(TWEET_LOCATION, geoNames);
+      searchers.put(TWEET_LOCATION, geoNames);
       searchers.put(USER_TIME_ZONE, timeZone);
-//      searchers.put(USER_LOCATION, geoNames);
+      searchers.put(USER_LOCATION, geoNames);
       searchers.put(USER_LANGUAGE, language);
+      searchers.put(USER_ID, groundTrue);
    }
 
    public List<UserCountryInfo> match(List<JsonData> userList)
    {
-//      preprocessCoordinates(userList);
+      preprocessCoordinates(userList);
 
       // Map<dataType, Map<JsonLabel, Map<countryCode, Probability>>>
       Map<String, Map<String, Map<String, Integer>>> dataForEachKey
@@ -75,6 +78,7 @@ public class UserCountryInfoMapper
          if (id == null)
             return null;
          UserCountryInfo uci = new UserCountryInfo(id);
+         System.out.println("Current user: " + id);
 
          for (String key : searchers.keySet())
          {
@@ -83,9 +87,14 @@ public class UserCountryInfoMapper
                             jsonData,
                             dataForEachKey,
                             key);
-            countryProbabilities = onlyTopXImportant(
-                    pruneMapWithProbabilities,
-                    countryProbabilities);
+
+            if (pruneMapWithProbabilities > 0)
+            {
+               countryProbabilities = onlyTopXImportant(
+                       pruneMapWithProbabilities,
+                       countryProbabilities);
+            }
+
             uci.putData(key, countryProbabilities);
          }
 
@@ -100,9 +109,9 @@ public class UserCountryInfoMapper
    }
 
 
-   private Map<String, Float> onlyTopXImportant(
-           Integer pruneMapWithProbabilities,
-           Map<String, Float> countryProbabilities)
+   public static Map<String, Float> onlyTopXImportant(
+           final Integer pruneMapWithProbabilities,
+           final Map<String, Float> countryProbabilities)
    {
       if (countryProbabilities.size() <= pruneMapWithProbabilities)
          return countryProbabilities;
@@ -112,13 +121,12 @@ public class UserCountryInfoMapper
               .toArray();
       Float minProb = (Float) sortedArray[pruneMapWithProbabilities-1];
 
-      Map<String, Float> reducedMap = countryProbabilities.keySet().stream()
+      return countryProbabilities.keySet().stream()
               .filter(country -> countryProbabilities.get(country) >= minProb)
               .collect(Collectors.toMap(
                       country -> country,
                       countryProbabilities::get
               ));
-      return reducedMap;
    }
 
 
@@ -258,9 +266,9 @@ public class UserCountryInfoMapper
    {
       try
       {
-         GeoNamesSearcher geoNamesSearcher = searchers.get(key);
+         DataSearcher dataSearcher = searchers.get(key);
          Set<String> labels = extract(key, userList);
-         return geoNamesSearcher.search(labels);
+         return dataSearcher.search(labels);
       }
       catch (Exception e)
       {

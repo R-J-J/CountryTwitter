@@ -1,13 +1,10 @@
 package com.utwente.salp2.rafal.geonames;
 
 import com.utwente.salp2.rafal.geonames.helpers.SearchHistory;
-import org.geonames.FeatureClass;
 
 import java.io.*;
-import java.lang.reflect.Array;
 import java.util.*;
 import java.util.stream.Collectors;
-import java.util.stream.Stream;
 
 /**
  * Created by rafal on 14.12.14.
@@ -18,7 +15,7 @@ import java.util.stream.Stream;
  * Expected file structure:
  * Timezone \t comma-separated-country-codes
  */
-public class TimeZone implements GeoNamesSearcher
+public class TimeZone implements DataSearcher
 {
    private final static int TIMEZONE_HISTORY_SIZE = 10;
    private SearchHistory<String, Map<String, Integer>> timeZoneFileHistory;
@@ -82,11 +79,11 @@ public class TimeZone implements GeoNamesSearcher
       if (timeZones.isEmpty())
          return results;
 
-      System.out.println("Following time zones were not found."+
+      System.err.println("Following time zones were not found."+
               " Consider adding them to the exception file.");
       timeZones.stream()
               .map(timeZone -> "\t- " + timeZone)
-              .forEach(System.out::println);
+              .forEach(System.err::println);
 
       return results;
    }

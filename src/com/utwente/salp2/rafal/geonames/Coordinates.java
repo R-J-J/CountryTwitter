@@ -15,7 +15,7 @@ import java.util.Set;
  * Responsibility of this class is to translate coordinates to
  * country codes.
  */
-public class Coordinates implements GeoNamesSearcher
+public class Coordinates implements DataSearcher
 {
    public static final String COORDINATE_SPLIT_PATTERN = ";";
    private final static int COORDINATES_HISTORY_SIZE = 10;
