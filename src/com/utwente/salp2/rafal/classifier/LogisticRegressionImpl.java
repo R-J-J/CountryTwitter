@@ -28,7 +28,7 @@ public class LogisticRegressionImpl
       RegressionDataSet rds = createDataset(uciList);
       logisticRegression.train(rds);
 
-//      System.out.println(logisticRegression.getCoefficents());
+      System.out.println(logisticRegression.getCoefficents());
    }
 
    public Integer test(List<UserCountryInfo> uciList)
@@ -87,7 +87,12 @@ public class LogisticRegressionImpl
 
    private RegressionDataSet createDataset(List<UserCountryInfo> uciList)
    {
-      RegressionDataSet rds = new RegressionDataSet(6, new CategoricalData[0]);
+      Set<String> keysNoId = new HashSet<>(uciList.iterator().next().getKeys());
+      keysNoId.remove(UserCountryInfoMapper.USER_ID);
+      int noOfVariables = keysNoId.size();
+
+
+      RegressionDataSet rds = new RegressionDataSet(noOfVariables, new CategoricalData[0]);
 
       for (UserCountryInfo uci : uciList)
       {
@@ -116,7 +121,7 @@ public class LogisticRegressionImpl
               .collect(Collectors.toList());
       Double[] valuesArrayTemp = valuesList.toArray(new Double[valuesList.size()]);
 
-      double[] valuesArray = new double[uciValues.size()];
+      double[] valuesArray = new double[valuesList.size()];
       for (int i=0; i < valuesArrayTemp.length; i++)
       {
          valuesArray[i] = valuesArrayTemp[i];

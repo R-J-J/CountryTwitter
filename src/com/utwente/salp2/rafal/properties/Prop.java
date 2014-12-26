@@ -20,6 +20,8 @@ public class Prop
    public static String timeZoneException;
    public static String geoNamesUserName;
    public static String UciListSerializedFile;
+   public static String UciListSerializedFileToClassify;
+   public static String resultFolder;
 
 
    static
@@ -52,6 +54,8 @@ public class Prop
       timeZoneException = prop.getProperty("timeZoneException");
       geoNamesUserName = prop.getProperty("geoNamesUserName");
       UciListSerializedFile = prop.getProperty("UciListSerializedFile");
+      UciListSerializedFileToClassify = prop.getProperty("UciListSerializedFileToClassify");
+      resultFolder = prop.getProperty("resultFolder");
 
       // get the property value and print it out
 //      Field[] fields = Prop.class.getDeclaredFields();

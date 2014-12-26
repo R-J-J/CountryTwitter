@@ -39,7 +39,6 @@ public class UserCountryInfoMapper
       TimeZone timeZone = new TimeZone(capitalsFilePath, exceptionFilePath);
       GeoNames geoNames = new GeoNames(geoNamesUserName);
       Coordinates coordinates = new Coordinates(geoNamesUserName);
-      GroundTrue groundTrue = new GroundTrue(groundTrueFilePath);
 
       searchers = new HashMap<>();
       searchers.put(TWEET_COORDINATES, coordinates);
@@ -48,7 +47,12 @@ public class UserCountryInfoMapper
       searchers.put(USER_TIME_ZONE, timeZone);
       searchers.put(USER_LOCATION, geoNames);
       searchers.put(USER_LANGUAGE, language);
-      searchers.put(USER_ID, groundTrue);
+
+      if (!groundTrueFilePath.isEmpty())
+      {
+         GroundTrue groundTrue = new GroundTrue(groundTrueFilePath);
+         searchers.put(USER_ID, groundTrue);
+      }
    }
 
    public List<UserCountryInfo> match(List<JsonData> userList)

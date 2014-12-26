@@ -2,10 +2,7 @@ package com.utwente.salp2.rafal.classifier;
 
 import com.utwente.salp2.rafal.geonames.UserCountryInfo;
 import com.utwente.salp2.rafal.geonames.UserCountryInfoMapper;
-import jsat.classifiers.CategoricalData;
-import jsat.classifiers.CategoricalResults;
-import jsat.classifiers.ClassificationDataSet;
-import jsat.classifiers.DataPoint;
+import jsat.classifiers.*;
 import jsat.classifiers.trees.DecisionTree;
 import jsat.linear.DenseVector;
 import jsat.linear.Vec;
@@ -30,8 +27,6 @@ public class DecissionTreeImpl
       decisionTree = new DecisionTree();
       ClassificationDataSet cds = createDataset(uciList);
       decisionTree.trainC(cds);
-
-//      System.out.println(logisticRegression.getCoefficents());
    }
 
    public int[][] test(List<UserCountryInfo> uciList)
@@ -40,7 +35,6 @@ public class DecissionTreeImpl
       if (decisionTree == null)
          return new int[2][2];
 
-      Integer correctlyClassified = 0;
       Map<String, Set<String>>  results = classify(uciList);
 
       for (UserCountryInfo uci : uciList)
@@ -100,8 +94,13 @@ public class DecissionTreeImpl
 
    private ClassificationDataSet createDataset(List<UserCountryInfo> uciList)
    {
+      Set<String> keysNoId = new HashSet<>(uciList.iterator().next().getKeys());
+      keysNoId.remove(UserCountryInfoMapper.USER_ID);
+      int noOfVariables = keysNoId.size();
+
+
       ClassificationDataSet cds = new ClassificationDataSet(
-              6,
+              noOfVariables,
               new CategoricalData[0],
               new CategoricalData(2));
 
@@ -114,6 +113,7 @@ public class DecissionTreeImpl
             int value = uciValues.remove(UserCountryInfoMapper.USER_ID)
                     .intValue();
             DataPoint dp = createDataPoint(uciValues);
+            dp.setWeight(1.0);
             assert dp != null;
             cds.addDataPoint(dp, value);
          }
@@ -132,7 +132,7 @@ public class DecissionTreeImpl
               .collect(Collectors.toList());
       Double[] valuesArrayTemp = valuesList.toArray(new Double[valuesList.size()]);
 
-      double[] valuesArray = new double[uciValues.size()];
+      double[] valuesArray = new double[valuesList.size()];
       for (int i=0; i < valuesArrayTemp.length; i++)
       {
          valuesArray[i] = valuesArrayTemp[i];
